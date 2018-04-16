@@ -8,9 +8,10 @@ setTimeout(() => {
 	new ScrollHandler("two");
 	new ScrollHandler("three");
 	new ScrollHandler("for");
+	new ScrollHandler("five");
+	new ScrollHandler("six");
 
 }, 250);
-
 
 	function ScrollHandler(pageId) {
 	  var page = document.getElementById(pageId);

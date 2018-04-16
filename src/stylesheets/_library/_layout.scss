@@ -139,35 +139,3 @@ http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html
 .mr-auto {
   margin: auto;
 }
-
-/* FULL HEIGHT SCROLL */
-
-#scroll {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-section.page {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-
-.content_section {
-  z-index: 100;
-  padding: 0 20px;
-  max-width: 1240px;
-  margin: 0 auto
-  // overflow: hidden;
-}
-
-.centred_bloc {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-
-  z-index: 100;
-  height: 100vh;
-}

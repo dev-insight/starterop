@@ -1,20 +1,12 @@
-.bigTitle {
-  position: absolute;
-  top: 0px;
-  left: 50px;
-
-  font-size: 144px;
-  font-weight: bold;
+.c-title {
   color: $text-grey;
-  &.blue {
+
+  &--blue {
     color: $primary-color;
   }
-}
-
-.masked {
-  mask: url('../images/Mask_photo.svg');
-  mask-repeat: no-repeat;
-  mask-size: 100%;
-  mask-position: center;
-  width: 160px;
+  &--section {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
 }

@@ -1,0 +1,44 @@
+.c-profil {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+
+  text-align: center;
+  cursor: pointer;
+  p {
+    color: $primary-color;
+    margin-bottom: 5px;
+  }
+}
+
+.masked {
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  mask-position: center;
+  width: 220px;
+  position: relative;
+  &--mask_1 {
+    mask-image: url('../images/Mask_photo.svg');
+  }
+}
+
+.picture {
+  position: relative;
+  width: 220px;
+
+  padding:0 20px;
+  margin: 0 auto;
+  &::before {
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+
+    background-image: url('../images/shape_profils_bg.svg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

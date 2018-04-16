@@ -155,3 +155,19 @@ button {
     }
   }
 }
+
+.c-button {
+  padding: 20px;
+  background-color: #FFF;
+  width: 300px;
+  color: $primary-color;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #FFF;
+  &:hover {
+    background-color: transparent;
+    border: 1px solid #FFF;
+    color: #FFF;
+  }
+}

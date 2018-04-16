@@ -14,19 +14,22 @@
 @import "_library/utilities";    // width and spacers helpers
 @import "_library/responsive";   // Responsive Web Design helpers
 @import "_library/animate";
+@import "_library/grillade-flex";
 
 // @import "_library/wordpress"; // WordPress reset and basic styles
 
 // New Grid System by default (Grid Layout). If you prefer old "Flexbox" Grid System, replace file with "_library/grillade-flex"
 // Note that none of these file is prefixed by an underscore, in order to compile them.
-@import "_library/flexboxgrid"; // grid system with Grid Layout
+// @import "_library/flexboxgrid"; // grid system with Grid Layout
 
 
 // Sections or pages
 
-@import "_sections/splash";
-@import "_sections/WWA";
-@import "_sections/WWD";
+@import "_layouts/splash";
+@import "_layouts/WWA";
+@import "_layouts/WWD";
+@import "_layouts/contents";
+@import "_layouts/main";
 
 // Components
 @import "components/media";      // media object
@@ -42,3 +45,4 @@
 @import "components/alerts";     // alerts styles
 @import "components/shapes";
 @import "components/titles";
+@import "components/profils";
