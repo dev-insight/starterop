@@ -1,0 +1,25 @@
+{
+  "transport": "sftp",
+  "hostname": "51.255.169.200",
+  "port": 22,
+  "username": "dev-insight",
+  "password": "Ps4QwEFU",
+  "target": "/home/dev-insight/public_html/dev-insight-new/wp-content/themes/dev-insight",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**",
+    ".DS_Store"
+    ".sass-cache"
+    ".publish"
+    "public"
+    "Desktop.ini"
+    "node_modules"
+    "**/generated/_icons.sass"
+    "npm-debug.log"
+    ".idea"
+
+  ],
+  "watch":[
+    "src/**"
+  ]
+}

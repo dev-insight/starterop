@@ -1,0 +1,13 @@
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}{{ title }}{% endblock %}</title>
+  <meta name="description" content="Dev-insight est un collectif de développeurs expérimentés, animés par les valeurs qualité et transparence. Nous réalisons des prestations sur mesure pour répondre à chacune vos attentes.">
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <link rel="icon" type="image/svg" href="images/blog_logo.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% block javascript %}
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  {% endblock %}
+</head>
