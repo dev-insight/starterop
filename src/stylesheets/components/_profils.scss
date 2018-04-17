@@ -17,14 +17,54 @@
   mask-position: center;
   width: 220px;
   position: relative;
+
+  animation-name: pulse_slow;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
   &--mask_1 {
     mask-image: url('../images/Mask_photo.svg');
+
+    animation-name: pulse_slow;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
   }
   &--mask_2 {
     mask-image: url('../images/Mask_photo_2.svg');
+
+    animation-name: pulse_slow;
+    animation-duration: 10s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
   }
   &--mask_3 {
     mask-image: url('../images/Mask_photo_3.svg');
+    
+    animation-name: pulse_slow;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+  }
+}
+
+.bg_shape {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+
+  background-image: url('../images/shape_profils_bg.svg');
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  animation-name: rorota;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  &.bg_shape_2 {
+    background-image: url('../images/shape_profils_bg_2.svg');
   }
 }
 
@@ -34,30 +74,4 @@
 
   padding:0 20px;
   margin: 0 auto;
-  &--bg_1 {
-    background-image: url('../images/shape_profils_bg.svg');
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation-name: pulse_slow;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-  }
-  &--bg_2 {
-    background-image: url('../images/shape_profils_bg_2.svg');
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation-name: pulse_slow;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-  }
-  &::before {
-    content: '';
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
-  }
 }

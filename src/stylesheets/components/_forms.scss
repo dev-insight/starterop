@@ -116,6 +116,11 @@ progress {
 
 // Material input
 
+.my-form {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
 
 .material {
 	position: relative;
@@ -123,9 +128,8 @@ progress {
 	margin: 5px;
 	border: none;
 	overflow: visible;
-  width: 450px;
-  margin-bottom: 15px;
-
+  width: 500px;
+  margin-bottom: 35px;
 	input {
 		box-sizing: border-box;
 		width: 100%;

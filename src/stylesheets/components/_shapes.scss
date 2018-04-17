@@ -27,4 +27,18 @@
     width: 90%;
     z-index: -7;
   }
+  &.team_1 {
+    top: -320px;
+    right: -650px;
+    width: 90%;
+    z-index: -7;
+  }
+  &.team_2 {
+    bottom: -1360px;
+    display: block;
+    left: -410px;
+    width: 160%;
+    z-index: -6;
+    max-height: 1700px;
+  }
 }

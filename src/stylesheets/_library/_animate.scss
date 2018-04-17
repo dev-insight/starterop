@@ -111,6 +111,24 @@
   animation-name: pulse_slow;
 }
 
+@keyframes rorota {
+  from {
+    transform: scale3d(1, 1, 1) rotate(0deg);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05) rotate(180deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1) rotate(360deg);
+  }
+}
+
+.pulse_slow {
+  animation-name: rorota;
+}
+
 @keyframes rubberBand {
   from {
     transform: scale3d(1, 1, 1);
