@@ -45,9 +45,6 @@
 
 @media screen and (max-height: 760px){
   .shape {
-    position: absolute;
-    z-index: -5;
-    max-width: inherit;
     &.splash_1 {
       top: 0;
       left: 0;
@@ -66,6 +63,37 @@
       width: 160%;
       z-index: -6;
       max-height: 970px;
+    }
+    &.team_1 {
+      top: -240px;
+      right: -650px;
+      max-width: 1000px;
+      width: 90%;
+      z-index: -7;
+    }
+  }
+}
+
+@media screen and (max-width: 450px){
+  .shape {
+    &.splash_1 {
+      top: 0px;
+      left: -120px;
+      width: 150%;
+      max-width: 540px;
+    }
+    &.splash_2 {
+      top: 0px;
+      right: 0px;
+      width: 55%;
+      max-width: 640px;
+    }
+    &.WWA_1 {
+      top: -160px;
+      left: -210px;
+      width: 560%;
+      z-index: -6;
+      max-height: 940px;
     }
     &.team_1 {
       top: -240px;

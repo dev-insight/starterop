@@ -27,6 +27,14 @@
   }
 }
 
+@media screen and (max-width: 450px){
+  .c-title--section {
+    top: 20px !important;
+    left: 20px !important;
+    font-size: 50px;
+  }
+}
+
 @keyframes color-change {
   0% { color: $first-grey; }
   100% { color: $primary-color; }

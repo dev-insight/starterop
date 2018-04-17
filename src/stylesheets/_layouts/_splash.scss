@@ -52,3 +52,29 @@ section.splash {
     }
   }
 }
+
+@media screen and (max-width: 450px){
+  .baseLine {
+    height: 400px;
+    h1 {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 15px;
+    }
+    &__sub {
+      font-size: 12px;
+    }
+  }
+  section.splash header {
+    padding: 10px 0;
+    a {
+      font-size: 16px;
+
+      font-weight: 600px;
+    }
+    img {
+      width: 150px;
+      height: 90px;
+    }
+  }
+}

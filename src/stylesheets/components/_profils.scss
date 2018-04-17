@@ -83,3 +83,11 @@
     padding: 0 10px !important;
   }
 }
+
+@media screen and (max-width: 450px){
+   .mobile-gird {
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: space-around;
+   }
+}

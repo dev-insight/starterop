@@ -3,3 +3,12 @@
   color: $text-grey;
   max-width: 840px;
 }
+
+@media screen and (max-width: 450px){
+  .present {
+    font-size: 26px;
+    color: $text-grey;
+    max-width: inherit;
+    text-align: center;
+  }
+}
