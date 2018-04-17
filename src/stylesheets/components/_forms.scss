@@ -192,3 +192,10 @@ progress {
 		transform: scale(0.6);
 	}
 }
+
+@media screen and (max-height: 760px){
+  .material {
+    width: 400px !important;
+    margin-bottom: 20px !important;
+  }
+}

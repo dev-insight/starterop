@@ -34,11 +34,45 @@
     z-index: -7;
   }
   &.reference_1 {
-    top: -360px;
+    top: -320px;
     display: block;
     left: -1810px;
     width: 280%;
     z-index: -6;
     max-height: 1700px;
+  }
+}
+
+@media screen and (max-height: 760px){
+  .shape {
+    position: absolute;
+    z-index: -5;
+    max-width: inherit;
+    &.splash_1 {
+      top: 0;
+      left: 0;
+      width: 80%;
+      max-width: 780px;
+    }
+    &.splash_2 {
+      top: 0px;
+      right: 0px;
+      width: 50%;
+      max-width: 570px;
+    }
+    &.WWA_1 {
+      top: -160px;
+      left: -210px;
+      width: 160%;
+      z-index: -6;
+      max-height: 970px;
+    }
+    &.team_1 {
+      top: -240px;
+      right: -650px;
+      max-width: 1000px;
+      width: 90%;
+      z-index: -7;
+    }
   }
 }

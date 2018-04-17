@@ -38,3 +38,17 @@ section.splash {
     font-weight: 100;
   }
 }
+
+@media screen and (max-height: 760px){
+  .baseLine {
+    height: 400px;
+    h1 {
+      font-size: 50px;
+      line-height: 55px;
+      margin-bottom: 15px;
+    }
+    &__sub {
+      font-size: 15px;
+    }
+  }
+}
