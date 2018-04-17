@@ -1,5 +1,26 @@
+$(document).ready(function(){
+	// Initialize royal slider
+	$(".royalSlider").royalSlider({
+			keyboardNavEnabled: true,
+			slidesOrientation: 'horizontal',
+			arrowsNavAutoHide: false,
+			// imageScaleMode: true,
+			// loop: true,
+			arrowsNav: false
+	});
+	var slider = $(".royalSlider").data('royalSlider');
 
+	slider.ev.on('rsBeforeAnimStart', function(event) {
+		console.log(event)
+    if (slider.currSlideId !== 0) {
+			$(".c-title").addClass("is-active");
+		}
+		if (slider.currSlideId == 0) {
+			$(".c-title").removeClass("is-active");
+		}
+	});
 
+});
 
 setTimeout(() => {
 	new WOW().init();

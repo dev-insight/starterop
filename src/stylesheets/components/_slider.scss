@@ -1,0 +1,48 @@
+.royalSlider {
+  width: 100% !important;
+  height: 100vh !important;
+
+  &.rsDefault {
+    background: none;
+
+    .rsBullets {
+      bottom: 40px;
+      background: none;
+
+      .rsBullet, span {
+        width: 94px;
+        height: 5px;
+      }
+
+      .rsBullet {
+        padding: 6px 8px 6px;
+        cursor: pointer;
+
+        span {
+          background: rgba(255,255,255,0.3);
+        }
+
+        &.rsNavSelected span {
+          background: white;
+        }
+      }
+
+      span {
+        box-shadow: 2px 1px 5px 0 rgba(0,0,0,0.15);
+        border-radius: 0;
+      }
+    }
+
+    .rsOverflow, .rsSlide  {
+      background: $first-grey;
+    }
+
+    .rsSlide {
+
+      &:first-child {
+        background: $primary-color;
+      }
+    }
+
+  }
+}

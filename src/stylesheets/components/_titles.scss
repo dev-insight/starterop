@@ -1,6 +1,14 @@
 .c-title {
   color: $text-grey;
 
+  &.is-active {
+    animation: color-change 500ms ease-out 1 forwards;
+  }
+
+  &--animation {
+    animation: color-change-reverse 250ms ease-out 1 forwards;
+  }
+
   &--blue {
     color: $primary-color;
   }
@@ -17,4 +25,14 @@
     left: 30px !important;
     font-size: 70px;
   }
+}
+
+@keyframes color-change {
+  0% { color: $first-grey; }
+  100% { color: $primary-color; }
+}
+
+@keyframes color-change-reverse {
+  0% { color: $primary-color; }
+  100% { color: $first-grey; }
 }
