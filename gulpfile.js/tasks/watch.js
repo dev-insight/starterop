@@ -9,11 +9,9 @@ var watchTask = function() {
 
   watchableTasks.forEach(function(taskName) {
     var task = config.tasks[taskName]
-    console.log(taskName, task)
     if(task) {
       var glob = path.join(config.root.src, task.src, '**/*.{' + task.extensions.join(',') + '}')
       watch(glob, function() {
-        console.log(taskName)
         require('./' + taskName)()
       })
     }

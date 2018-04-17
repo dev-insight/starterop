@@ -12,7 +12,6 @@ $(document).ready(function(){
 	var slider = $(".royalSlider").data('royalSlider');
 
 	slider.ev.on('rsBeforeAnimStart', function(event) {
-		console.log(event)
     if (slider.currSlideId !== 0) {
 			$(".c-title--animation").addClass("is-active");
 		}
@@ -82,7 +81,7 @@ $(document).ready(function(){
 		      scrolled.scrollTop = position;
 		      runAnimation = requestAnimationFrame(animate);
 		      stopAnimationIfRequired(position);
-		      console.log("position=" + scrolled.scrollTop + "(" + percentage + ")");
+		      // console.log("position=" + scrolled.scrollTop + "(" + percentage + ")");
 		    };
 		    // Loop the animation function
 		    runAnimation = requestAnimationFrame(animate);
