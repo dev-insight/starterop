@@ -23,12 +23,8 @@
       "dest": "./"
     },
 
-    "js": {
+    "javascriptyolo": {
       "src": "js",
-      "dest": "javascripts",
-      "entries": {
-        "app": ["./app.js"]
-      },
       "extensions": ["js", "json"],
       "extractSharedJs": false
     },
