@@ -20,6 +20,12 @@
   &--mask_1 {
     mask-image: url('../images/Mask_photo.svg');
   }
+  &--mask_2 {
+    mask-image: url('../images/Mask_photo_2.svg');
+  }
+  &--mask_3 {
+    mask-image: url('../images/Mask_photo_3.svg');
+  }
 }
 
 .picture {
@@ -28,6 +34,24 @@
 
   padding:0 20px;
   margin: 0 auto;
+  &--bg_1 {
+    background-image: url('../images/shape_profils_bg.svg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: pulse_slow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  &--bg_2 {
+    background-image: url('../images/shape_profils_bg_2.svg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: pulse_slow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
   &::before {
     content: '';
     top: 0;
@@ -35,10 +59,5 @@
     left: 0;
     right: 0;
     position: absolute;
-
-    background-image: url('../images/shape_profils_bg.svg');
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 }

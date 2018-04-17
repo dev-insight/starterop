@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="133px" viewBox="0 0 150 133" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M134.386631,34.8296145 C170.82084,57.197964 168.678968,86.9431634 154.466305,125.185873 C140.253643,163.428582 110.792085,167.835218 74.3580634,145.466868 C55.3931698,133.823649 25.4330858,128.606243 18.3971864,107.769565 C11.9161586,88.5761206 15.7121972,62.5192646 22.5268196,44.1827471 C36.7396685,5.94003769 97.9526091,12.4611019 134.386631,34.8296145 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3_TEAM-2" transform="translate(-380.000000, -298.000000)">
+            <g id="photo_1" transform="translate(340.000000, 251.000000)">
+                <g id="natanne" transform="translate(23.980645, 23.796774)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#0129E3" transform="translate(89.544580, 87.885170) rotate(166.000000) translate(-89.544580, -87.885170) " xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
