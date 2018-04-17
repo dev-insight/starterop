@@ -199,3 +199,9 @@ progress {
     margin-bottom: 20px !important;
   }
 }
+
+@media screen and (max-width: 450px){
+  .material {
+    width: 300px !important;
+  }
+}
