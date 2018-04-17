@@ -7,12 +7,35 @@
     width: 100%;
     .footer__content {
       position: relative;
-      img {
+      display: flex;
+      flex-flow: column;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      height: 90px;
+      > img {
         position: absolute;
         left: 0;
+        top: 0;
         max-width: 200px;
       }
+      > a {
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        color: #FFF;
+        font-size: 25px;
+        text-decoration: none;
+      }
     }
+  }
+}
 
+.rs {
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
+  img {
+    width: 60px;
+    height: 60px;
   }
 }
