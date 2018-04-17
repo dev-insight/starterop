@@ -14,10 +14,10 @@ $(document).ready(function(){
 	slider.ev.on('rsBeforeAnimStart', function(event) {
 		console.log(event)
     if (slider.currSlideId !== 0) {
-			$(".c-title").addClass("is-active");
+			$(".c-title--animation").addClass("is-active");
 		}
 		if (slider.currSlideId == 0) {
-			$(".c-title").removeClass("is-active");
+			$(".c-title--animation").removeClass("is-active");
 		}
 	});
 
