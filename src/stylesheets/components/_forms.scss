@@ -130,6 +130,28 @@ progress {
 	overflow: visible;
   width: 500px;
   margin-bottom: 35px;
+  textarea {
+    box-sizing: border-box;
+		width: 100%;
+		padding: 12px 10px 8px 0px;
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+		border-bottom: 1px solid #DDD;
+		font-size: 120%;
+		outline: none;
+		cursor: text;
+    color: #FFF;
+    background-color: transparent;
+
+		&::-webkit-input-placeholder {
+			transition: color 300ms ease;
+      color: $gray-400;
+		}
+		&:not(:focus)::-webkit-input-placeholder {
+			color: transparent;
+		}
+  }
 	input {
 		box-sizing: border-box;
 		width: 100%;
@@ -176,6 +198,10 @@ progress {
 		transform: scaleX(1);
 		visibility: visible;
 	}
+  textarea:focus ~ hr {
+		transform: scaleX(1);
+		visibility: visible;
+	}
 
 	label {
 		position: absolute;
@@ -189,6 +215,10 @@ progress {
 	}
 	input:focus ~ label,
 	input:valid ~ label {
+		transform: scale(0.6);
+	}
+  textarea:focus ~ label,
+	textarea:valid ~ label {
 		transform: scale(0.6);
 	}
 }
