@@ -5,6 +5,7 @@
 
   text-align: center;
   cursor: pointer;
+  padding: 10px;
   p {
     color: $primary-color;
     margin-bottom: 5px;
@@ -18,32 +19,17 @@
   width: 220px;
   position: relative;
 
-  animation-name: pulse_slow;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
   &--mask_1 {
     mask-image: url('../images/Mask_photo.svg');
 
-    animation-name: pulse_slow;
-    animation-duration: 10s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
   }
   &--mask_2 {
     mask-image: url('../images/Mask_photo_2.svg');
-
-    animation-name: pulse_slow;
-    animation-duration: 10s;
-    animation-delay: 4s;
-    animation-iteration-count: infinite;
   }
   &--mask_3 {
     mask-image: url('../images/Mask_photo_3.svg');
 
-    animation-name: pulse_slow;
-    animation-duration: 10s;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
+
   }
 }
 
@@ -77,6 +63,14 @@
 }
 
 @media screen and (max-height: 760px){
+  .picture {
+    max-height: 120px;
+    width: 110px;
+    padding: 0 10px !important;
+  }
+}
+
+@media screen and (max-width: 760px){
   .picture {
     max-height: 120px;
     width: 110px;

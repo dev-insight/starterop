@@ -71,6 +71,53 @@
       width: 90%;
       z-index: -7;
     }
+    &.reference_1 {
+    top: -120px;
+    display: block;
+    left: -770px;
+    width: 340%;
+    z-index: -6;
+    max-height: 820px;
+    }
+  }
+}
+
+@media screen and (max-width: 760px){
+  .shape {
+    &.splash_1 {
+      top: 0;
+      left: 0;
+      width: 80%;
+      max-width: 780px;
+    }
+    &.splash_2 {
+      top: 0px;
+      right: 0px;
+      width: 50%;
+      max-width: 570px;
+    }
+    &.WWA_1 {
+      top: -160px;
+      left: -210px;
+      width: 160%;
+      z-index: -6;
+      max-height: 970px;
+    }
+    &.team_1 {
+      top: -240px;
+      right: -650px;
+      max-width: 1000px;
+      width: 90%;
+      z-index: -7;
+    }
+    &.reference_1 {
+    top: -120px;
+    display: block;
+    left: -770px;
+    width: 340%;
+    z-index: -6;
+    max-height: 820px;
+    }
   }
 }
 

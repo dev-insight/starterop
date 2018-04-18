@@ -31,6 +31,22 @@
   }
 }
 
+@media screen and (max-width: 760px){
+  .services {
+    flex-flow: column;
+    p {
+      font-size: 18px;
+      strong {
+        font-size: 38px;
+      }
+      &:first-child {
+        margin-right: 0px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 450px){
   .services {
     flex-flow: column;
