@@ -9,11 +9,26 @@
 // Warning : you should use your own values, regardless of the devices
 // Best practise : (max-width: ($BP - 1)) and (min-width: $BP)
 
-$tiny: 480px !default; // or 'em' if you prefer, of course
-$small: 576px !default;
-$medium: 768px !default;
-$large: 992px !default;
-$extra-large: 1200px !default;
+// dev environment flag
+html.dev body:before {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  background: $primary-color;
+  padding: 0.5em;
+  z-index: 9999;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: $first-grey;
+  content: 'mobile';
+  pointer-events: none;
+}
+
+@media (min-width: $tiny) { html.dev body:before { content: 'tiny'; } }
+@media (min-width: $small) { html.dev body:before { content: 'small'; } }
+@media (min-width: $medium) { html.dev body:before { content: 'medium'; } }
+@media (min-width: $large) { html.dev body:before { content: 'large'; } }
+@media (min-width: $extra-large) { html.dev body:before { content: 'extra-large'; } }
 
 // gutter values for grid layouts. Unit can be: %, px, em, rem
 $grid-gutters: ( '': 1rem, '-l': 2rem, '-xl': 4rem );
